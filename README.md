@@ -24,10 +24,6 @@ A modern multiple reverse shell sessions/clients manager via terminal written in
 - [x] Initialize from configuration file
 - [x] Web UI
 
-## Documents
-
-* [Chinese | 中文文档](https://goporting-reverse-shell.vercel.app/)
-
 ## Get Start
 
 > There are multiple ways to run this tool, feel free to choose one of the following method.
