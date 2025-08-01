@@ -27,7 +27,7 @@ RUN go-bindata -pkg assets -o ./internal/util/assets/assets.go ./assets/config.e
 RUN go build -ldflags="-s -w " -trimpath -o ./build/goporting/goporting ./cmd/goporting/main.go
 
 # Stage 4: running environment from scratch
-FROM ubuntu
+FROM ubuntu:24.10
 LABEL maintainer="Wang Yihang <threatcodeer@gmail.com>"
 COPY --from=builder /app/build/goporting/goporting /app/goporting
 WORKDIR /app
